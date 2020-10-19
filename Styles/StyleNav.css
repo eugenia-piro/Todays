@@ -1,0 +1,65 @@
+nav ul{
+    margin: 0;
+    padding: 5px 0;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subscribe a{    
+    font: 700 16px/2px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.subscribe h4 {
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    background-color: rgb(222, 240, 66);
+    margin: 0;
+}
+
+.search {
+    width: 100%;
+    padding: 5px 0;
+    background: blueviolet;    
+}
+.search input {
+    
+    
+}
+.search button {
+    
+}
+
+.date h5{
+    display: inline;
+    font: 700 14px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: gray;
+}
+.date {
+    display: flex;
+    justify-content: space-around;
+    background-color: hotpink;
+    margin: 0 0 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    nav ul{
+        margin: 10px 0 0 0;
+        padding: 5px 0;
+        background-color: coral;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+    }    
+}

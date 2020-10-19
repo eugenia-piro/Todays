@@ -4,35 +4,41 @@
         <title> Home | Today's </title>
         <link rel="stylesheet" href="Styles/reset.css">
         <link rel="stylesheet" href="Styles/StyleHeader.css">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="Styles/StyleNav.css">
+        <link rel="stylesheet" href="Styles/StyleArticles.css">
         <!--For icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
         <!--Newspaper's name-->
         <header>
-            <img src="" alt="">
-            <h1>Today's</h1>
-            <div>
-                <h2>
-                    <a href="">EN</a>
-                </h2>
-                <h2>
-                    <a href="">ES</a>
-                </h2>
-                <h2>
-                    <a href="">FR</a>
-                </h2>
+            <div class="icon">
+                <img src="Photos/logo.jpg" alt="Today's Logo">
+                <h1 class="more">Today's</h1>
+                <div>
+                    <h2>
+                        <a href="">EN</a>
+                        -
+                    </h2>
+                    <h2>
+                        <a href="">ES</a>
+                        -
+                    </h2>
+                    <h2>
+                        <a href="">FR</a>
+                    </h2>
+                </div>
+            </div>            
+            <div class="follow">                
                 <p>Follow us:</p>                
                 <!--Facebook-->
-                <i class='fab fa-facebook-square' style='font-size:48px;color:red'></i>
+                <i class='fab fa-facebook-square'></i>
                 <!--Instagram-->
-                <i class='fab fa-instagram' style='font-size:48px;color:red'></i>
+                <i class='fab fa-instagram'></i>
                 <!--Twitter-->
-                <i class='fab fa-twitter' style='font-size:48px;color:red'></i>
-                <!--Email-->
-                <i class="material-icons" style="font-size:48px;color:red">mail_outline</i>
+                <i class='fab fa-twitter'></i>                
             </div>
         </header>
         <!--Navigation menu-->
@@ -60,29 +66,29 @@
                     <a href="">Sports</a>
                 </li>
                 <li>
-                    <a href="">More <i class="material-icons" style="font-size:36px">menu</i></a>
+                    <a href=""><i class="material-icons" style="font-size:36px">menu</i></a>
                 </li>
             </ul>
         </nav>
         <!--Search and Date-->
         <section>
-            <div>
-                <h4> Subscribe Now </h4>
+            <div class="subscribe">
+                <h4> <a href="">Subscribe Now</a> </h4>
             </div>
-            <div>
+            <div class="search">
                 <form action="">
-                <input type="search" placeholder="What are you looking for?">
-                <button> Search </button>
+                    <input type="search" placeholder="What are you looking for?">
+                    <button> Search </button>
                 </form>
             </div>
-            <div>
-                <h5>Date</h5>
+            <div class="date">
+                <h5> October 20th, 2020</h5>
                 <h5>Weather</h5>
             </div>
         </section>
         <section>
             <!--Main news-->
-            <article>
+            <article id="bignews">
                 <img src="Photos/Picture1-big.jpg" alt="">
                 <h2>
                     Behind in polls, Republicans see a silver lining in voter registrations
