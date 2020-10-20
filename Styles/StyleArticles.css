@@ -13,7 +13,7 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     color: orangered;
-    line-height: 10px;   
+    line-height: 20px;   
 }
 
 #bignews hr {
@@ -38,7 +38,7 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: orangered;
-    line-height: 10px;  
+    line-height: 16px;  
 }
 
 .mediumnews p {
@@ -57,12 +57,13 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: orangered;
-    line-height: 10px;
+    color: rgb(184, 50, 224);
+    line-height: 0cm;
 }
 
 .smallnews img {
     width: 100px;
+    padding: 5px;
 }
 
 .smallnews h2 {
@@ -70,8 +71,9 @@
     font-size: 16px;
     font-weight: 700;
     color: black;
-    line-height: 10px;
+    line-height: 16px;
     display: inline;
+    padding: 5px;
     
 }
 
@@ -79,23 +81,29 @@
     font-family: Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    color: orangered;
+    color: rgb(184, 50, 224);
     line-height: 10px;
-    display: inline;
-    align-items: center;
+    display: inline;s
     justify-content: flex-start;
+    padding: 5px;
 }
 
 .smallnews {
-    border-right: solid 5px orchid;
-    border-left: solid 5px orchid;
+    border-right: solid 5px rgb(184, 50, 224);
+    border-left: solid 5px rgb(184, 50, 224);
     margin: 20px;
     padding: 5px;
     display: flex;
     flex-direction: column;  
-    align-items: center;
-    justify-content: flex-start;  
+    justify-content: space-around;  
     
+}
+
+.smallnews div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
 }
 
 /*Aside*/
@@ -104,12 +112,27 @@ aside a {
     color: black;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 700;    
+}
+
+aside h4 {
+    border-bottom: solid 5px rgb(51, 158, 207);
 }
 
 aside h2 {
-    border: 0 5px ;
-    border-color: orchid;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    line-height: 16px;    
+}
+
+aside h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(51, 158, 207);
+    line-height: 10px;
 }
 
 aside p {
@@ -118,23 +141,56 @@ aside p {
     color: black;
 }
 
+aside {    
+    background-color: rgba(51, 158, 207, 0.226);
+}
+
 /*Footer*/
 footer a {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
     color: gray;
-    
 }
 
 footer ul {
-    padding: 5px 0;
+    padding: 0;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
+    height: 15px;
+    line-height: 0cm;
 }
 footer div {
     text-align: center;
+    line-height: 0cm;
 }
 
-/* Media Queries */
+/* Media Queries For desktop*/
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;    
+    }
+
+    .main {
+        width: 65%;
+        padding: 5px;    
+    }
+
+    aside {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mediumnews article {
+        width: 45%;
+        padding: 10px;        
+    }
+
+    .mediumnews {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }    
+}  

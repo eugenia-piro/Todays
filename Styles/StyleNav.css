@@ -3,7 +3,15 @@ nav ul{
     padding: 5px 0;
     display: none;
 }
-
+ #see {
+    margin: 0 0 0 0;
+    padding: 5px 0;
+    background-color: rgb(52, 156, 11);
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;     
+ }
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -11,55 +19,69 @@ nav a {
     font-size: 16px;
     font-weight: 700;
 }
-
+#ss {
+    display: flex;    
+    justify-content: space-around;
+    background-color: rgb(51, 158, 207);
+    align-items: center;
+    padding: 2px 0;
+    flex-wrap: wrap;
+}
 .subscribe a{    
     font: 700 16px/2px Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 .subscribe h4 {
-    text-align: center;
-    padding: 5px 0;
-    width: 100%;
-    background-color: rgb(222, 240, 66);
+    text-align: center;   
     margin: 0;
 }
-
 .search {
-    width: 100%;
-    padding: 5px 0;
-    background: blueviolet;    
+    font: 12px/2px Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
-.search input {
-    
-    
-}
-.search button {
-    
+.search input  {
+    border: none;  
+    background-color:rgba(14, 14, 97, 0.514);
+    width: 220px;
+    height: 30px;    
+    color: #ffffff;
 }
 
-.date h5{
-    display: inline;
-    font: 700 14px Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: gray;
+.search button {
+    width: 70px;
+    height: 30px;
+    color: #ffffff;
+    padding: 3px;
+    background-color:rgba(14, 14, 97, 0.863);
+    border: none;  
 }
+
+
 .date {
     display: flex;
     justify-content: space-around;
-    background-color: hotpink;
+    background-color: rgb(184, 50, 224);
     margin: 0 0 10px 0;
+    color: #ffffff;
+    font: 600 14px/0px Arial, Helvetica, sans-serif;    
+    padding: 0cm;
+    height: 20px;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    nav ul{
-        margin: 10px 0 0 0;
+    nav ul {
+        margin: 0 0 0 0;
         padding: 5px 0;
-        background-color: coral;
+        background-color: rgb(52, 156, 11);
         display: flex;
         list-style-type: none;
         justify-content: space-around;
         align-items: center;
-    }    
+    }
+    #see {
+        display: none;
+    }
 }

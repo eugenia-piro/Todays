@@ -15,9 +15,13 @@
         <!--Newspaper's name-->
         <header>
             <div class="icon">
-                <img src="Photos/logo.jpg" alt="Today's Logo">
-                <h1 class="more">Today's</h1>
                 <div>
+                    <img src="Photos/logo.png" alt="Today's Logo">
+                </div>
+                <div>
+                    <h1 class="more">Today's</h1>
+                </div>                
+                <div id="ddheader">
                     <h2>
                         <a href="">EN</a>
                         -
@@ -29,16 +33,16 @@
                     <h2>
                         <a href="">FR</a>
                     </h2>
+                    <div class="follow">                
+                        <p>Follow us:</p>                
+                        <!--Facebook-->
+                        <i class='fab fa-facebook-square'></i>
+                        <!--Instagram-->
+                        <i class='fab fa-instagram'></i>
+                        <!--Twitter-->
+                        <i class='fab fa-twitter'></i>                
+                    </div>
                 </div>
-            </div>            
-            <div class="follow">                
-                <p>Follow us:</p>                
-                <!--Facebook-->
-                <i class='fab fa-facebook-square'></i>
-                <!--Instagram-->
-                <i class='fab fa-instagram'></i>
-                <!--Twitter-->
-                <i class='fab fa-twitter'></i>                
             </div>
         </header>
         <!--Navigation menu-->
@@ -69,154 +73,205 @@
                     <a href=""><i class="material-icons" style="font-size:36px">menu</i></a>
                 </li>
             </ul>
+            <div id="see">
+                <a href=""><i class="material-icons" style="font-size:36px">menu</i></a>
+            </div>
         </nav>
         <!--Search and Date-->
-        <section>
+        <section id="ss">
             <div class="subscribe">
                 <h4> <a href="">Subscribe Now</a> </h4>
             </div>
             <div class="search">
                 <form action="">
-                    <input type="search" placeholder="What are you looking for?">
+                    <input type="text" placeholder="What are you looking for?">
                     <button> Search </button>
                 </form>
-            </div>
-            <div class="date">
-                <h5> October 20th, 2020</h5>
-                <h5>Weather</h5>
-            </div>
+            </div>            
         </section>
-        <section>
-            <!--Main news-->
-            <article id="bignews">
-                <img src="Photos/Picture1-big.jpg" alt="">
-                <h2>
-                    Behind in polls, Republicans see a silver lining in voter registrations
-                </h2>
-                <p>
-                    Democrats lead in overall numbers, as well as early voting, but voter registration gains in three critical states have given Republicans a cause for hope.
-                </p>
-                <hr>
-            </article>
-            <!--Other importants news-->
-            <div class="mediumnews">
-                <article>
-                    <img src="Photos/Picture2-medium.jpg" alt="">
-                    <h3>
-                        Colorado fights largest wildfire in state history, second forces thousands to flee
-                    </h3>
+        <div class="date">
+            <h5> October 20th, 2020</h5>
+            <h5>Weather</h5>
+        </div>
+        <div class= "container">
+            <section class="main">
+                <!--Main news-->
+                <article id="bignews">
+                    <img src="Photos/Picture1-big.jpg" alt="">
+                    <h2>
+                        Behind in polls, Republicans see a silver lining in voter registrations
+                    </h2>
                     <p>
-                        Colorado crews scrambled Monday to gain ground against two blazes as this year's historic wildfire season imparted more heartbreak and hardships on the West.
-                    </p>
+                        Democrats lead in overall numbers, as well as early 
+                        voting, but voter registration gains in three critical 
+                        states have given Republicans a cause for hope.
+                    </p>                    
                 </article>
-                <article>
-                    <img src="Photos/Picture3-medium.jpg" alt="">
-                    <h3>
-                        Surprising Results in Initial Virus Testing in N.Y.C. Schools
-                    </h3>
-                    <p>
-                        The absence of outbreaks, if it holds, suggests that the city’s efforts to return children to classrooms could serve as an influential model for the nation.
-                    </p>
-                </article>
-                <hr>
-            </div>
-            <!--Most read news-->
-            <div class="smallnews">
-                <h3> Most read </h3>
-                <div>
-                    <span>1</span>
-                    <img src="Photos/Picture4-small.jpg" alt="">
-                    <h2>Lauren Fleshman's feminist approach to coaching </h2>
+                <!--Other importants news-->
+                <div class="mediumnews">
+                    <article>
+                        <img src="Photos/Picture2-medium.jpg" alt="">
+                        <h3>
+                            Colorado fights largest wildfire in state history, 
+                            second forces thousands to flee
+                        </h3>
+                        <p>
+                            Colorado crews scrambled Monday to gain ground 
+                            against two blazes as this year's historic wildfire 
+                            season imparted more heartbreak and hardships on 
+                            the West.
+                        </p>
+                    </article>
+                    <article>
+                        <img src="Photos/Picture3-medium.jpg" alt="">
+                        <h3>
+                            Surprising Results in Initial Virus Testing in N.Y.
+                            C. Schools
+                        </h3>
+                        <p>
+                            The absence of outbreaks, if it holds, suggests 
+                            that the city’s efforts to return children to 
+                            classrooms could serve as an influential model for 
+                            the nation.
+                        </p>
+                    </article>                    
                 </div>
-                <div>
-                    <span>2</span>
-                    <img src="Photos/Picture5-small.jpg" alt="">
-                    <h2>2,000-year-old cat etching found at Nazca Lines Site in Peru</h2>
-                </div>
-                <div>
-                    <span>3</span>
-                    <img src="Photos/Picture6-small.jpg" alt="">
-                    <h2> Some signs of recovery from severe COVID lung damage </h2>
-                </div>
-                <div>
-                    <span>4</span>
-                    <img src="Photos/Picture7-small.jpg" alt="">
-                    <h2> Dodgers Rally to win N.L.C.S. and reach 3rd World Series in 4 years </h2>
-                </div>
-                <div>
-                    <span>5</span>
-                    <img src="Photos/Picture8-small.jpg" alt="">
-                    <h2> The World's largest tropical wetland has become an inferno </h2>
+                <!--Most read news-->
+                <div class="smallnews">
+                    <h3> Most read </h3>
+                    <div>
+                        <span>1</span>
+                        <img src="Photos/Picture4-small.jpg" alt="">
+                        <h2>
+                            Lauren Fleshman's feminist approach to coaching 
+                        </h2>
+                    </div>
+                    <div>
+                        <span>2</span>
+                        <img src="Photos/Picture5-small.jpg" alt="">
+                        <h2>2,000-year-old cat etching found at Nazca Lines 
+                            Site in Peru</h2>
+                    </div>
+                    <div>
+                        <span>3</span>
+                        <img src="Photos/Picture6-small.jpg" alt="">
+                        <h2> Some signs of recovery from severe COVID lung 
+                            damage </h2>
+                    </div>
+                    <div>
+                        <span>4</span>
+                        <img src="Photos/Picture7-small.jpg" alt="">
+                        <h2> Dodgers Rally to win N.L.C.S. and reach 3rd World 
+                            Series in 4 years </h2>
+                    </div>
+                    <div>
+                        <span>5</span>
+                        <img src="Photos/Picture8-small.jpg" alt="">
+                        <h2> The World's largest tropical wetland has become an inferno </h2>
+                    </div>                
                 </div>                
-            </div>
-            <hr>
-        </section>
-        <!--Right column-->
-        <aside>
-            <div>
-                <a href="">News</a>
-                <h2>
-                    Ex-CIA director fears Trump will wreak havoc after election
-                </h2>
-                <p>
-                    Brennan worries that if he loses, Trump could provoke civil unrest, declare marital law or take other damaging steps before Joe Biden is inaugurated.
-                </p>
-            </div>
-            <div>
-                <a href="">World</a>
-                <h2>
-                    Police Raids in France Target Islamist Links After Teacher’s Killing
-                </h2>
-                <p>
-                    Interior Minister Gerald Darmanin said the raids began on Monday morning, and that some Muslim groups were being investigated.
-                </p>
-            </div>
-            <div>
-                <a href="">Economy</a>
-                <h2>
-                    Would Biden's Tax Plan help or hurt a waek economy?
-                </h2>
-                <p>
-                    Joseph R. Biden Jr. is pitching tax hikes on corporations and the rich. Many economists say they won’t hurt growth. Some conservative economists — and President Trump — say they’ll crush the recovery.
-                </p>
-            </div>
-            <div>
-                <a href="">Opinion</a>
-                <h2>
-                    Why we need to reshape education in America?
-                </h2>
-                <p>
-                    If educating our youth is a moral imperative, we must decide what values we want them to learn and how to teach those effectively.
-                </p>
-            </div>
-            <div>
-                <a href="">Science</a>
-                <h2>
-                    Finally, the first room-temperature superconductor
-                </h2>
-                <p>
-                    It conveys electricity in the climate of a crisp fall day, but only under pressures comparable to what you’d find closer to Earth’s core.
-                </p>
-            </div>
-            <div>
-                <a href="">Entertainment</a>
-                <h2>
-                    Netflix's 'Cuties' backlash: What happens now?
-                </h2>
-                <p>
-                    "Cuties" entered the legal arena when a Texas grand jury indicated Netflix for promoting lewdness. All your burning questions, answered.
-                </p>
-            </div>
-            <div>
-                <a href="">Sports</a>
-                <h2>
-                    Clippers are hiring Tyronn Lue as their new coach
-                </h2>
-                <p>
-                    Lue will take over as Paul George and Kawhi Leonard each have only one guaranteed year remaining with the Clippers before they can return to free agency.
-                </p>
-            </div>
-        </aside>
+            </section>
+            <!--Right column-->
+            <aside>
+                <h3>
+                    Read More
+                </h3>
+                <div>
+                    <h4>
+                        <a href="">News</a>
+                    </h4>                
+                    <h2>
+                        Ex-CIA director fears Trump will wreak havoc after election
+                    </h2>
+                    <p>
+                        Brennan worries that if he loses, Trump could provoke 
+                        civil unrest, declare marital law or take other 
+                        damaging steps before Joe Biden is inaugurated.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">World</a>
+                    </h4>                
+                    <h2>
+                        Police Raids in France Target Islamist Links After 
+                        Teacher’s Killing
+                    </h2>
+                    <p>
+                        Interior Minister Gerald Darmanin said the raids began 
+                        on Monday morning, and that some Muslim groups were 
+                        being investigated.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">Economy</a>
+                    </h4>                
+                    <h2>
+                        Would Biden's Tax Plan help or hurt a waek economy?
+                    </h2>
+                    <p>
+                        Joseph R. Biden Jr. is pitching tax hikes on 
+                        corporations and the rich. Many economists say they 
+                        won’t hurt growth. Some conservative economists — and 
+                        President Trump — say they’ll crush the recovery.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">Opinion</a>
+                    </h4>                
+                    <h2>
+                        Why we need to reshape education in America?
+                    </h2>
+                    <p>
+                        If educating our youth is a moral imperative, we must 
+                        decide what values we want them to learn and how to 
+                        teach those effectively.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">Science</a>
+                    </h4>                
+                    <h2>
+                        Finally, the first room-temperature superconductor
+                    </h2>
+                    <p>
+                        It conveys electricity in the climate of a crisp fall 
+                        day, but only under pressures comparable to what you’d 
+                        find closer to Earth’s core.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">Entertainment</a>
+                    </h4>                
+                    <h2>
+                        Netflix's 'Cuties' backlash: What happens now?
+                    </h2>
+                    <p>
+                        "Cuties" entered the legal arena when a Texas grand 
+                        jury indicated Netflix for promoting lewdness. All your 
+                        burning questions, answered.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        <a href="">Sports</a>
+                    </h4>                
+                    <h2>
+                        Clippers are hiring Tyronn Lue as their new coach
+                    </h2>
+                    <p>
+                        Lue will take over as Paul George and Kawhi Leonard 
+                        each have only one guaranteed year remaining with the 
+                        Clippers before they can return to free agency.
+                    </p>
+                </div>
+            </aside>
+        </div>
+        
         <!--Others-->
         <section>
             <div>
