@@ -1,13 +1,140 @@
+/*Most important news*/
 #bignews img {
     width: 95%;
     display: block;
     margin: auto;
 }
 
-#bignews h2 {
+#bignews {
+    margin: 0 2px;
+}
 
+#bignews h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: orangered;
+    line-height: 10px;   
+}
+
+#bignews hr {
+    color: purple;
+    width: ;    
 }
 
 #bignews p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;    
+    color: black;
+}
+
+/*Two coloums*/
+.mediumnews img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.mediumnews h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: orangered;
+    line-height: 10px;  
+}
+
+.mediumnews p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;    
+    color: black;
+}
+
+.mediumnews hr {
+    font-size: 14px;    
+    color: black;
+}
+ 
+/*Top five*/
+.smallnews h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: orangered;
+    line-height: 10px;
+}
+
+.smallnews img {
+    width: 100px;
+}
+
+.smallnews h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    line-height: 10px;
+    display: inline;
     
 }
+
+.smallnews span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: orangered;
+    line-height: 10px;
+    display: inline;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.smallnews {
+    border-right: solid 5px orchid;
+    border-left: solid 5px orchid;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: flex-start;  
+    
+}
+
+/*Aside*/
+aside a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+aside h2 {
+    border: 0 5px ;
+    border-color: orchid;
+}
+
+aside p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;    
+    color: black;
+}
+
+/*Footer*/
+footer a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: gray;
+    
+}
+
+footer ul {
+    padding: 5px 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div {
+    text-align: center;
+}
+
+/* Media Queries */
