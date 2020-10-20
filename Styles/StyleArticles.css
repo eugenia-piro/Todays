@@ -16,11 +16,6 @@
     line-height: 20px;   
 }
 
-#bignews hr {
-    color: purple;
-    width: ;    
-}
-
 #bignews p {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 17px;    
@@ -83,8 +78,7 @@
     font-weight: 700;
     color: rgb(184, 50, 224);
     line-height: 10px;
-    display: inline;s
-    justify-content: flex-start;
+    display: inline;
     padding: 5px;
 }
 
