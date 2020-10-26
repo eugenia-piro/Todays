@@ -25,6 +25,7 @@
 /*Two coloums*/
 .mediumnews img {
     width: 70%;
+    height: 180px;
     display: block;
     margin: auto;
 }
@@ -127,6 +128,8 @@ aside h3 {
     font-weight: 700;
     color: rgb(51, 158, 207);
     line-height: 10px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 aside p {
@@ -137,6 +140,8 @@ aside p {
 
 aside {    
     background-color: rgba(51, 158, 207, 0.226);
+    padding: 0 15px;
+    margin: 0%;
 }
 
 /*Footer*/
