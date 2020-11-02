@@ -2,10 +2,12 @@
 <html>
     <head>
         <title> Subscription | Today's </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/reset.css">
         <link rel="stylesheet" href="Styles/StyleHeader.css">
         <link rel="stylesheet" href="Styles/FormStyles.css">
         <link rel="stylesheet" href="Styles/StyleArticles.css">
+        <script defer="defer" src="formAlerts.js"></script>
         <!--For icons-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -42,7 +44,7 @@
             </div>
         </header>
         <!--Title of the form-->
-        <div class="hello">
+        <div id="hello">
             <h2> Hello </h2>
         </div>
         <!--Forma-->
@@ -60,72 +62,81 @@
                     <!--Nombre completo: Debe tener más de 6 letras y al menos un espacio entre medio. -->
                     <div>
                         <label for="">Enter your full name:</label>
-                        <input type="text">
+                        <input type="text" name="fullName" id="fullName">
+                        <p class="wrong"></p>
                     </div>
                     <!-- Email: debe tener un formato de email válido. -->
                     <div>
                         <label for="">Email:</label>
-                        <input type="email">
+                        <input type="email" id="email">
+                        <p class="wrong"></p>
                     </div>
                 </section>
                 <section>
                     <!-- Contraseña: Al menos 8 caracteres, formados por letras y números.-->
                     <div>
                         <label for="">Password:</label>
-                        <input type="password">
+                        <input type="password" id="password">
+                        <p class="wrong"></p>
                     </div>
                     <!--Repetir contraseña-->
                     <div>
                         <label for="">Repeat password:</label>
-                        <input type="password">
+                        <input type="password" id="rPassword">
+                        <p class="wrong"></p>
                     </div>
                 </section>
                 <section>
                     <!-- Edad: Número entero mayor o igual a 18.-->
                     <div>
                         <label for="">Age:</label>
-                        <input type="number">
+                        <input type="number" name="age">
+                        <p class="wrong"></p>
                     </div>
                     <!-- Teléfono: Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis.-->
                     <div>
                         <label for="">Telephone number:</label>
-                        <input type="number">
+                        <input type="number" name="tel">
+                        <p class="wrong"></p>
                     </div>
                 </section>
                 <section>
                      <!-- Dirección: Al menos 5 caracteres, con letras, números y un espacio en el medio.-->
                     <div>
                         <label for="">Address:</label>
-                        <input type="text">
+                        <input type="text" name="adress">
+                        <p class="wrong"></p>
                     </div>
                     <!-- Ciudad: Al menos 3 caracteres.-->
                     <div>
                         <label for="">City:</label>
-                        <input type="text">
+                        <input type="text" name="city">
+                        <p class="wrong"></p>
                     </div>
                 </section>
                 <section>
                      <!-- Código Postal: Al menos 3 caracteres.-->
                     <div>
                         <label for="">Zip code:</label>
-                        <input type="number">
+                        <input type="number" name="zip">
+                        <p class="wrong"></p>
                     </div>
                     <!-- DNI: Número de 7 u 8 dígitos.-->
                     <div>
                         <label for="">ID:</label>
-                        <input type="number">
+                        <input type="number" name="id">
+                        <p class="wrong"></p>
                     </div>
                 </section>
                 <!-- Resetear -->
                 <div id="reset">
-                    <input type="reset" value="Reset" class="backColor">
+                    <button type="reset" value="Reset" class="backColor"> Reset</button>
                 </div>
                 <!-- Submit -->
                 <div id="sub">
-                    <input type="submit" value="Send" class="backColor">
+                    <button type="submit" value="Send" class="backColor"> Send </button>
                 </div>
-            </form>
-            
+            </form>            
         </div>
         <footer>
             <div>
