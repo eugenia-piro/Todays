@@ -59,3 +59,24 @@ header p {
         font-size: 70px;        
     }    
 }
+
+/*Footer*/
+footer a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: gray;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 15px;
+    line-height: 0cm;
+}
+footer div {
+    text-align: center;
+    line-height: 0cm;
+}
