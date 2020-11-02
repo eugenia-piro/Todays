@@ -142,3 +142,19 @@ function checkIdn (e) {
 function uncheckIdn() {
     document.getElementsByClassName('wrong')[9].innerHTML = "<p></p>";
 }
+//Submit
+var label = document.getElementsByTagName('label');
+var inputs = document.getElementsByTagName('input');
+var myArray;
+for (var i; inputs.length ;i++) {
+    if (document.getElementsByClassName('wrong')[i] === "<p></p>") {
+        myArray[i]=label[i]+inputs[i];
+    } else {
+       myArray[i]=label[i]+ 'Error -' + document.getElementsByClassName('wrong')[i];
+    }
+}
+var form = document.getElementsByTagName('form');
+form.addEventListener('submit', submitForm);
+function submitForm (e) {
+    alert(myArray);
+}
