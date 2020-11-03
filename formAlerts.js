@@ -1,5 +1,5 @@
-var arrayWrong = [''];
-var arrayInputs = [''];
+var arrayWrong = [];
+var arrayInputs = [];
 //Full Name
 var fullName = document.getElementById('fullName');
 // Alert name
@@ -198,6 +198,7 @@ var arrayLabel = Array.from(label).map(element=>element.textContent);
 console.log(arrayLabel);
 var myArray = [];
 //myArray[0] = arrayLabel[0].concat(arrayInputs[0]+'Hola');
+console.log(arrayLabel.length)
 for (var i; arrayLabel.length ;i++) {
     if (arrayWrong[i] === ' ') {
         var x = arrayLabel[i] +''+ arrayInputs[i];
@@ -211,6 +212,6 @@ console.log(myArray);
 //Buttom action
 var myForm = document.getElementById('submit');
 myForm.addEventListener('click', submitForm);
-function submitForm (e) {
+function submitForm (e) {    
     alert(myArray);
 }
