@@ -144,17 +144,22 @@ function uncheckIdn() {
 }
 //Submit
 var label = document.getElementsByTagName('label');
+console.log(label);
 var inputs = document.getElementsByTagName('input');
-var myArray;
+console.log(inputs);
+var myArray = [];
+var wrong = document.getElementsByClassName('wrong');
+console.log(wrong);
+alert(label[0].value+inputs[0].value);
 for (var i; inputs.length ;i++) {
     if (document.getElementsByClassName('wrong')[i] === "<p></p>") {
-        myArray[i]=label[i]+inputs[i];
+        myArray[i]=label.value[i]+ inputs.value[i];
     } else {
-       myArray[i]=label[i]+ 'Error -' + document.getElementsByClassName('wrong')[i];
+       myArray[i]= label.value[i] + 'Error: ' + wrong.value[i];
     }
 }
-var form = document.getElementsByTagName('form');
-form.addEventListener('submit', submitForm);
+var myForm = document.getElementsByTagName("form");
+myForm.addEventListener('submit', submitForm);
 function submitForm (e) {
-    alert(myArray);
+    alert(label[0]+input[0]);
 }
