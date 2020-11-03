@@ -142,24 +142,28 @@ function checkIdn (e) {
 function uncheckIdn() {
     document.getElementsByClassName('wrong')[9].innerHTML = "<p></p>";
 }
-//Submit
-var label = document.getElementsByTagName('label');
-console.log(label);
-var inputs = document.getElementsByTagName('input');
-console.log(inputs);
-var myArray = [];
-var wrong = document.getElementsByClassName('wrong');
+//SUBMIT
+var label = document.querySelectorAll('label');
+var arrayLabel = Array.from(label).map(element=>element.textContent);
+console.log(arrayLabel);
+var inputs = document.querySelectorAll('input');
+var arrayInputs = Array.from(inputs).map(element=>element.textContent);
+console.log(arrayInputs);
+var wrong = document.querySelectorAll('wrong');
 console.log(wrong);
-alert(label[0].value+inputs[0].value);
-for (var i; inputs.length ;i++) {
+var arrayWrong = Array.from(wrong).map(element=>element.textContent);
+console.log(arrayWrong);
+var myArray = [];
+for (var i; arrayLabel.length ;i++) {
     if (document.getElementsByClassName('wrong')[i] === "<p></p>") {
-        myArray[i]=label.value[i]+ inputs.value[i];
+        myArray[i] = arrayLabel[i] + arrayInputs[i];
     } else {
-       myArray[i]= label.value[i] + 'Error: ' + wrong.value[i];
+       myArray[i]= arrayLabel[i] + 'Error: ' + arrayWrong[i];
     }
 }
-var myForm = document.getElementsByTagName("form");
-myForm.addEventListener('submit', submitForm);
+//Buttom action
+var myForm = document.getElementById('submit');
+myForm.addEventListener('click', submitForm);
 function submitForm (e) {
-    alert(label[0]+input[0]);
+    alert(myArray);
 }
