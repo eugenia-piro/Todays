@@ -198,17 +198,19 @@ var arrayLabel = Array.from(label).map(element=>element.textContent);
 console.log(arrayLabel);
 var myArray = [];
 //myArray[0] = arrayLabel[0].concat(arrayInputs[0]+'Hola');
-for (var i=0; arrayInputs.length-1 ;i++) {
+for (var i; arrayLabel.length ;i++) {
     if (arrayWrong[i] === ' ') {
-        myArray[i] = arrayLabel[i].concat(arrayInputs[i]);
+        var x = arrayLabel[i] +''+ arrayInputs[i];
+        myArray.push(x);
     } else {
-       myArray[i]= arrayLabel[i].concat(arrayWrong[i]);
+        var x = arrayLabel[i] +''+ arrayInputs[i];
+        myArray.push(x);
     }
 }
 console.log(myArray);
 //Buttom action
-/*var myForm = document.getElementById('submit');
+var myForm = document.getElementById('submit');
 myForm.addEventListener('click', submitForm);
 function submitForm (e) {
     alert(myArray);
-}*/
+}
