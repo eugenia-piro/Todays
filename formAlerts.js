@@ -1,12 +1,12 @@
-var arrayWrong = [];
-var arrayInputs = [];
+var arrayWrong = ['none','none','none','none','none','none','none','none','none','none'];
+var arrayInputs = ['none','none','none','none','none','none','none','none','none','none'];
 //Full Name
 var fullName = document.getElementById('fullName');
 // Alert name
 fullName.addEventListener('blur', checkName);
 fullName.addEventListener('focus', uncheckName);
 function checkName (e) {
-    arrayInputs[0] = ''+e.target.value+'';
+    arrayInputs[0] = e.target.value;
     if (e.target.value.length>=6 && e.target.value.includes(' ')) {
     arrayWrong[0] = ' ';
     } else{
@@ -199,12 +199,14 @@ console.log(arrayLabel);
 var myArray = [];
 //myArray[0] = arrayLabel[0].concat(arrayInputs[0]+'Hola');
 console.log(arrayLabel.length)
-for (var i; arrayLabel.length ;i++) {
+for (var i=0; i<arrayLabel.length ;i++) {
+    console.log(i);
     if (arrayWrong[i] === ' ') {
-        var x = arrayLabel[i] +''+ arrayInputs[i];
+        var x = arrayLabel[i] + arrayInputs[i];
+        console.log(x);
         myArray.push(x);
     } else {
-        var x = arrayLabel[i] +''+ arrayInputs[i];
+        var x = arrayLabel[i] + arrayInputs[i];
         myArray.push(x);
     }
 }
